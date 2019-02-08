@@ -25,6 +25,9 @@ body {
 }
 
 /* Section 3 - Mobile First Rules */
+#logo {
+    width: 50px;
+}
 
 
 /* Section 4 - Larger Screen Rules */
