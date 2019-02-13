@@ -101,7 +101,7 @@ footer {
 }
 /*-----------------------------------*/
 #cur-weather{
-    background-image: url(/Weather/Images/raindrops.jpg);
+    background-image: url(/weather/images/raindrops.jpg);
     background-size: 1200px;
 }
 /* Section 3 - Mobile First Rules */
