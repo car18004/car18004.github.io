@@ -152,9 +152,8 @@ h3 {
 #mph{
     font-size: 20px;
     position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 53%;
+    left: 42.5%;
 }
 /*-----------------------------------*/
 .windinfo{
