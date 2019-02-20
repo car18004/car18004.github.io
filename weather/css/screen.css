@@ -76,6 +76,11 @@ nav ul li {
     list-style: none;
     margin-right: 10px;
 }
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
 /*-----------------------------------*/
 nav {
     position: fixed;
@@ -177,3 +182,21 @@ h3 {
 }
 
 /* Section 4 - Larger Screen Rules */
+@media screen and (min-width: 800px){
+    #cur-weather{
+        display: flex;
+        flex-direction: row;
+        background-size: 1700px;
+    }
+    .tile{
+        flex-grow: 1;
+    }
+    nav{
+        position:static;
+    }
+
+    nav ul{
+        margin: 0;
+        padding-bottom: 5px;
+    }
+}
