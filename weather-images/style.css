@@ -1,0 +1,95 @@
+/********************************
+* Default Styles - Mobile First
+********************************/
+
+body {
+	font-family: sans-serif;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size-adjust: 0.5;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column;
+	flex-wrap: nowrap;
+	padding: .5em;
+}
+
+h1 {
+	font-size: 1.05em;
+	/*	line-height: 1.25;*/
+}
+
+
+/*******************************
+* Page Header Styles
+* Background Image
+*******************************/
+
+
+/********************************
+* Main Content Styles
+********************************/
+
+.featured-image {
+	margin: 1em 0;
+}
+
+.featured-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.image-caption {
+	padding: .25em 1em;
+	font-family: serif;
+	font-size: 80%;
+}
+
+
+/********************************
+* Large Screen Styles
+* 1200px viewport / 18px font = 66.7em
+********************************/
+
+@media (min-width: 66.7em) {
+	body {
+		font-size: 1.5vw;
+	}
+	h1 {
+		font-size: 3em;
+		line-height: 1.05;
+	}
+	/*	Background Images - Use with large screens */
+	
+    .small {
+        display: none;
+    }
+
+	.main {
+		max-width: 80%;
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+}
