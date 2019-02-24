@@ -63,10 +63,6 @@ h3#wind{
     margin-bottom: 1px;
 }
 /*-----------------------------------*/
-#pointer{
-    width: 100px;
-}
-/*-----------------------------------*/
 #rotate{
     transform: rotate(210deg);
 }
@@ -107,7 +103,6 @@ footer {
 /*-----------------------------------*/
 #cur-weather{
     background-image: url(/weather/images/raindrops.jpg);
-    background-size: 1200px;
 }
 /* Section 3 - Mobile First Rules */
 
@@ -161,7 +156,6 @@ h3 {
 }
 /*-----------------------------------*/
 #rainpic {
-    width: 300px;
     margin-bottom: 10px;
 }
 /*-----------------------------------*/
@@ -198,4 +192,11 @@ h3 {
         margin: 0;
         padding-bottom: 5px;
     }
+
+    #mph {
+        top: 46%;
+        left: 42.7%;
+    }
+
+
 }
