@@ -58,6 +58,10 @@ body {
 h3#temptitle{
     margin-bottom: 15px; 
 }
+
+h3#summary_title{
+    margin-bottom: 15px;
+}
 /*-----------------------------------*/
 h3#wind{
     margin-bottom: 1px;
@@ -91,6 +95,7 @@ nav {
 footer {
     margin-bottom: 60px;
     background-color: #0e89d5;
+    width: 100%;
 }
 /*-----------------------------------*/
 .tile {
@@ -147,7 +152,7 @@ h3 {
 #mph{
     font-size: 20px;
     position: absolute;
-    top: 60.5%;
+    top: 53%;
     left: 42.5%;
 }
 /*-----------------------------------*/
@@ -156,8 +161,13 @@ h3 {
 }
 /*-----------------------------------*/
 #rainpic {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
+/*-----------------------------------*/
+#hourly_forecast{
+    margin: 5px;
+}
+
 /*-----------------------------------*/
 #forecast ul {
     overflow: auto;
@@ -172,6 +182,10 @@ h3 {
     display: inline-block;
     padding: 3px;
     text-decoration: none;
+}
+
+h3#wind_title{
+    margin-bottom: 20px;
 }
 
 /* Section 4 - Larger Screen Rules */
@@ -194,9 +208,47 @@ h3 {
     }
 
     #mph {
-        top: 39.5%;
-        left: 43.4%;
+        top: 45.5%;
+        left: 48.5%;
     }
 
+    header {
+        height: 80px;
+    }
 
+    #logo {
+        width: 60px;
+        float: left;
+    }
+
+    p#current{
+        font-size: 100px;
+    }
+    p.windinfo{
+        margin: 2.5px;
+    }
+
+    p#wind_direction{
+        margin-top: 10px;
+    }
+
+    h3#temptitle{
+        margin-bottom: 40px;
+    }
+   
+    h3#wind_title{
+        margin-bottom: 30px;
+    }
+
+    #summary_title{
+        margin-bottom: 20px;
+    }
+
+    img#rainpic{
+        margin-bottom: 30px;
+    }
+
+    p#info{
+       margin-bottom: 10px; 
+    }
 }
