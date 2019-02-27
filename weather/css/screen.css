@@ -67,8 +67,12 @@ h3#wind{
     margin-bottom: 1px;
 }
 /*-----------------------------------*/
-#rotate{
-    transform: rotate(210deg);
+#dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/images/wind-pointer.png');
+    z-index: 100;
+    margin: -.6em auto 0;
 }
 /*------------------------------------*/
 nav ul li {
@@ -160,7 +164,7 @@ h3 {
     font-size: 12px;
 }
 /*-----------------------------------*/
-#rainpic {
+.weatherpic {
     margin-bottom: 20px;
 }
 /*-----------------------------------*/
@@ -244,7 +248,7 @@ h3#wind_title{
         margin-bottom: 20px;
     }
 
-    img#rainpic{
+    img.weatherpic{
         margin-bottom: 30px;
     }
 

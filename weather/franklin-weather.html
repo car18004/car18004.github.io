@@ -25,20 +25,18 @@
             <p id="info"><b>Zip:</b> 83237| <b>Elevation:</b> 1514.246 ft.| <b>Location:</b> 42.07° N, 111.79° W</p> 
 
             <div id="cur-weather">
-                
                 <div id="temps" class="tile">
                     <h3 id="temptitle">Temperature</h3>
                     <p id="current">40°F</p>
                     <p id="high" class="highlow">64°F</p>
-                    <p id="low" class="highlow">41°F</p>        
+                    <p id="low" class="highlow">41°F</p>     
+                    <p id="feel">Feels Like <span id="feelTemp">??</span>°F</p>
                 </div>
 
                 <div id="wind" class="tile">
                     <h3 id="wind_title">Wind</h3>
                     
-                    <div id="rotate">
-                        <img id="pointer" src="/weather/images/wind-pointer.png" alt="wind_pointer">
-                    </div>
+                        <div id="dial" class="w"></div>
 
                     <div id="mph">5 mph</div>
                         <p class="windinfo" id="wind_direction"><b>Direction:</b> SW</p>
@@ -47,12 +45,14 @@
 
                     <div id="summary" class="tile">
                         <h3 id="summary_title">Rain</h3>
-                        <img id="rainpic" src="/weather/images/raindrops_200.jpg" alt="Raindrops">
+                            <picture>
+                                <source media="(max-width: 350px)" class="weatherpic" src="/weather/images/raindrops_150" alt="Weather">
+                                <source media="(max-width: 800px)" class="weatherpic" src="/weather/images/raindrops_200" alt="Weather">
+                            </picture>
                     </div>
-
                 </div>
 
-                <section id="forecast" class="tile">  
+                <section id="forecast" class="tile">
                     <h3 id="hourly_forecast"><b>Hourly Forecast</b></h3>
                     <ul>
                         <li>10am: 41&deg;F |</li>
@@ -75,5 +75,6 @@
         <footer>
             &copy;2019, The Weather Site
         </footer>
+        <script src="/weather/js/functions.js"></script>
     </body>
 </html>
