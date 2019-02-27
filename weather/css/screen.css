@@ -44,7 +44,7 @@ header {
 #high{
     color: red;
 }
-
+/*------------------------------------*/
 .highlow{
     display: inline;
     margin-left: 5px;
@@ -58,7 +58,7 @@ body {
 h3#temptitle{
     margin-bottom: 15px; 
 }
-
+/*------------------------------------*/
 h3#summary_title{
     margin-bottom: 15px;
 }
@@ -75,12 +75,44 @@ h3#wind{
     margin: -.6em auto 0;
 }
 /*------------------------------------*/
+.n {
+    transform: rotate(0deg);
+}
+/*------------------------------------*/
+.ne {
+    transform: rotate(45deg);
+}
+/*------------------------------------*/
+.e {
+    transform: rotate(90deg);
+}
+/*------------------------------------*/
+.se {
+    transform: rotate(135deg);
+}
+/*------------------------------------*/
+.s {
+    transform: rotate(181.5deg);
+}
+/*------------------------------------*/
+.sw {
+    transform: rotate(225deg);
+}
+/*------------------------------------*/
+.w {
+    transform: rotate(270deg);
+}
+/*------------------------------------*/
+.nw {
+    transform: rotate(315deg);
+}
+/*------------------------------------*/
 nav ul li {
     display: inline-block;
     list-style: none;
     margin-right: 10px;
 }
-
+/*------------------------------------*/
 nav ul{
     display: flex;
     justify-content: space-around;
@@ -191,67 +223,70 @@ h3 {
 h3#wind_title{
     margin-bottom: 20px;
 }
-
 /* Section 4 - Larger Screen Rules */
+
 @media screen and (min-width: 800px){
     #cur-weather{
         display: flex;
         flex-direction: row;
         background-size: 1700px;
     }
+    /*------------------------------------*/
     .tile{
         flex-grow: 1;
     }
+    /*------------------------------------*/
     nav{
         position:static;
     }
-
+/*------------------------------------*/
     nav ul{
         margin: 0;
         padding-bottom: 5px;
     }
-
+/*------------------------------------*/
     #mph {
         top: 45.5%;
         left: 48.5%;
     }
-
+/*------------------------------------*/
     header {
         height: 80px;
     }
-
+/*------------------------------------*/
     #logo {
         width: 60px;
         float: left;
     }
-
+/*------------------------------------*/
     p#current{
         font-size: 100px;
     }
+/*------------------------------------*/
     p.windinfo{
         margin: 2.5px;
     }
-
+/*------------------------------------*/
     p#wind_direction{
         margin-top: 10px;
     }
-
+/*------------------------------------*/
     h3#temptitle{
         margin-bottom: 40px;
     }
-   
+/*------------------------------------*/
     h3#wind_title{
         margin-bottom: 30px;
     }
-
+/*------------------------------------*/
     #summary_title{
         margin-bottom: 20px;
     }
-
+/*------------------------------------*/
     img.weatherpic{
         margin-bottom: 30px;
     }
-
+/*------------------------------------*/
     p#info{
        margin-bottom: 10px; 
     }
