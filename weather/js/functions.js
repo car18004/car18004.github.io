@@ -65,3 +65,71 @@ function windDial(direction) {
             break;
     }
 }
+
+const weather = getCondition("rainy");
+function getCondition(phrase){
+    let input=phrase;
+    switch (input) {
+        case "cloudy":
+        case "partly cloudy":
+        case "Cloudy":
+        case "Partly Cloudy":
+            input = "cloudy";
+            break;
+        case "clear":
+        case "sunny":
+        case "Clear":
+        case "Sunny":
+            input = "clear";
+            break;
+        case "rainy":
+        case "Rainy":
+        case "rain":
+        case "Rain":
+            input = "rainy";
+            break;
+        case "fog":
+        case "Foggy":
+        case "mist":
+        case "Misty":
+            input = "foggy";
+            break;
+        case "snow":
+        case "snowy":
+        case "Snow":
+        case "Snowy":
+            input = "snowy";
+            break;
+    }
+    console.log(input);
+    return input;
+}
+
+function changeSummaryImage(weather){
+    const weatherImages = weather;
+    switch (weather){
+        case "cloudy":
+            weatherImage.setAttribute("class", "cloudy");
+            break;
+        case "clear":
+            weatherImage.setAttribute("class", "clear");
+            break;
+        case "rainy":
+            weatherImage.setAttribute("class", "rainy");
+            break;
+        case "foggy":
+            weatherImage.setAttribute("class", "foggy");
+            break;
+        case "snowy":
+            weatherImage.setAttribute("class", "snowy");
+            break;
+    }
+}
+changeSummaryImage(weather);
+
+let meters = document.getElementById("elevation").innerText;
+elevation.innerHTML = convertMeters(meters);
+function convertMeters(meters){
+    let feet = 0;
+    return feet = Math.floor(meters * 3.28);
+}

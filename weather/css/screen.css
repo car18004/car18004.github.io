@@ -141,9 +141,27 @@ footer {
     border-radius: 15px;
     text-align: center;
 }
+
+
+.clear{
+    background-image: url(/weather/images/clear_300.jpg);
+}
+.cloudy{
+     background-image: url(/weather/images/clouds_300.jpg);
+}
+.rainy{
+     background-image: url(/weather/images/raindrops_150.jpg);
+}
+.foggy{
+     background-image: url(/weather/images/fog_300.jpg);
+}
+.snowy{
+     background-image: url(/weather/images/snow_300.jpg);
+}
+
 /*-----------------------------------*/
 #cur-weather{
-    background-image: url(/weather/images/raindrops.jpg);
+    background-size: cover;
 }
 /* Section 3 - Mobile First Rules */
 
@@ -289,5 +307,24 @@ h3#wind_title{
 /*------------------------------------*/
     p#info{
        margin-bottom: 10px; 
+    }
+    .clear {
+        background-image: url(/weather/images/clear_400.jpg);
+    }
+
+    .cloudy {
+        background-image: url(/weather/images/clouds_400.jpg);
+    }
+
+    .rainy {
+        background-image: url(/weather/images/raindrops_200.jpg);
+    }
+
+    .foggy {
+        background-image: url(/weather/images/fog_400.jpg);
+    }
+
+    .snowy {
+        background-image: url(/weather/images/snow_400.jpg);
     }
 }
