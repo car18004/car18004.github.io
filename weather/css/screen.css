@@ -67,46 +67,52 @@ h3#wind{
     margin-bottom: 1px;
 }
 /*-----------------------------------*/
-#dial {
-    height: 150px;
-    width: 150px;
-    background: no-repeat center/85% url('/weather/images/wind-pointer.png');
-    z-index: 100;
-    margin: -.6em auto 0;
-}
-/*------------------------------------*/
-.n {
-    transform: rotate(0deg);
-}
-/*------------------------------------*/
-.ne {
-    transform: rotate(45deg);
-}
-/*------------------------------------*/
-.e {
-    transform: rotate(90deg);
-}
-/*------------------------------------*/
-.se {
-    transform: rotate(135deg);
-}
-/*------------------------------------*/
-.s {
-    transform: rotate(181.5deg);
-}
-/*------------------------------------*/
-.sw {
-    transform: rotate(225deg);
-}
-/*------------------------------------*/
-.w {
-    transform: rotate(270deg);
-}
-/*------------------------------------*/
-.nw {
-    transform: rotate(315deg);
-}
-/*------------------------------------*/
+
+/* -------------------------------------------------------- */
+    /* Wind dial and directions */
+    #dial {
+        height: 150px;
+        width: 150px;
+        background: no-repeat center/85% url('/weather/images/wind-pointer.png');
+        z-index: 100;
+        margin: -.6em auto 0;
+    }
+    /*------------------------------------*/
+    .n {
+        transform: rotate(0deg);
+    }
+    /*------------------------------------*/
+    .ne {
+        transform: rotate(45deg);
+    }
+    /*------------------------------------*/
+    .e {
+        transform: rotate(90deg);
+    }
+    /*------------------------------------*/
+    .se {
+        transform: rotate(135deg);
+    }
+    /*------------------------------------*/
+    .s {
+        transform: rotate(181.5deg);
+    }
+    /*------------------------------------*/
+    .sw {
+        transform: rotate(225deg);
+    }
+    /*------------------------------------*/
+    .w {
+        transform: rotate(270deg);
+    }
+    /*------------------------------------*/
+    .nw {
+        transform: rotate(315deg);
+    }
+    /*------------------------------------*/
+/* ---------------------------------- */
+
+
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -142,22 +148,52 @@ footer {
     text-align: center;
 }
 
-
+/* ---------Background images for tiles----------------------- */
 .clear{
-    background-image: url(/weather/images/clear_300.jpg);
+    background-image: url("/weather/images/clear_300.jpg");
 }
 .cloudy{
-     background-image: url(/weather/images/clouds_300.jpg);
+     background-image: url("/weather/images/clouds_300.jpg");
 }
 .rainy{
-     background-image: url(/weather/images/raindrops_150.jpg);
+     background-image: url("/weather/images/raindrops_150.jpg");
 }
 .foggy{
-     background-image: url(/weather/images/fog_300.jpg);
+     background-image: url("/weather/images/fog_300.jpg");
 }
 .snowy{
-     background-image: url(/weather/images/snow_300.jpg);
+     background-image: url("/weather/images/snow_300.jpg");
 }
+/* ----------------------------------------------------------- */
+
+
+/* Small weather picture in summary tile */
+.rain-small{
+    content: url("/weather/images/raindrops_150.jpg");
+    }
+
+.cloud-small {
+    content: url("/weather/images/clouds_300.jpg");
+}
+
+.clear-small {
+    content: url("/weather/images/clear_300.jpg");
+}
+
+.fog-small {
+    content: url("/weather/images/fog_300.jpg");
+}
+
+.snow-small {
+    content: url("/weather/images/snow_300.jpg");
+}
+
+#weatherImage {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+/* ___________________________________________________ */
 
 /*-----------------------------------*/
 #cur-weather{
@@ -205,9 +241,11 @@ h3 {
 /*-----------------------------------*/
 #mph{
     font-size: 20px;
-    position: absolute;
+    margin-top: -85px;
+    margin-bottom: 70px;
+    /* position: absolute;
     top: 53%;
-    left: 42.5%;
+    left: 42.5%; */
 }
 /*-----------------------------------*/
 .windinfo{
@@ -218,8 +256,9 @@ h3 {
     margin-bottom: 20px;
 }
 /*-----------------------------------*/
-#hourly_forecast{
+#hourly_forecast {
     margin: 5px;
+    width: 100%;
 }
 
 /*-----------------------------------*/
@@ -252,6 +291,7 @@ h3#wind_title{
     /*------------------------------------*/
     .tile{
         flex-grow: 1;
+        max-width: 510px;
     }
     /*------------------------------------*/
     nav{
@@ -307,6 +347,7 @@ h3#wind_title{
 /*------------------------------------*/
     p#info{
        margin-bottom: 10px; 
+       
     }
     .clear {
         background-image: url(/weather/images/clear_400.jpg);
@@ -326,5 +367,9 @@ h3#wind_title{
 
     .snowy {
         background-image: url(/weather/images/snow_400.jpg);
+    }
+
+    #forecast{
+        max-width: 100%;
     }
 }

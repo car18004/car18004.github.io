@@ -3,7 +3,7 @@ const temp = 31;
 const speed = 5;
 buildWC(speed, temp);
 
-const direction = "S"; //Set your own value
+const direction = "SW"; //Set your own value
 windDial(direction);
 
 // Calculate the Windchill
@@ -66,7 +66,7 @@ function windDial(direction) {
     }
 }
 
-const weather = getCondition("rainy");
+const weather = getCondition("rain");
 function getCondition(phrase){
     let input=phrase;
     switch (input) {
@@ -107,21 +107,28 @@ function getCondition(phrase){
 
 function changeSummaryImage(weather){
     const weatherImages = weather;
+    let weatherImage = document.getElementById("cur-weather");
+    let weatherSmallImage = document.getElementById('weatherImage');
     switch (weather){
         case "cloudy":
             weatherImage.setAttribute("class", "cloudy");
+            weatherSmallImage.setAttribute("class", "cloud-small");
             break;
         case "clear":
             weatherImage.setAttribute("class", "clear");
+            weatherSmallImage.setAttribute("class", "clear-small");
             break;
         case "rainy":
             weatherImage.setAttribute("class", "rainy");
+            weatherSmallImage.setAttribute("class", "rain-small");
             break;
         case "foggy":
             weatherImage.setAttribute("class", "foggy");
+            weatherSmallImage.setAttribute("class", "fog-small");
             break;
         case "snowy":
             weatherImage.setAttribute("class", "snowy");
+            weatherSmallImage.setAttribute("class", "snow-small");
             break;
     }
 }
@@ -133,3 +140,53 @@ function convertMeters(meters){
     let feet = 0;
     return feet = Math.floor(meters * 3.28);
 }
+
+// Convert, Format time to 12 hour format
+function format_time(hour) {
+    if (hour > 23) {
+        hour -= 24;
+    }
+    let amPM = (hour > 11) ? "pm" : "am";
+    if (hour > 12) {
+        hour -= 12;
+    }
+    if (hour == 0) {
+        hour = "12";
+    }
+    return hour + amPM;
+}
+
+// Build the hourly temperature list
+function buildHourlyData(nextHour, hourlyTemps) {
+    // Data comes from a JavaScript object of hourly temp name - value pairs
+    // Next hour should have a value between 0-23
+    // The hourlyTemps variable holds an array of temperatures
+    // Line 8 builds a list item showing the time for the next hour 
+    // and then the first element (value in index 0) from the hourly temps array
+    let hourlyListItems = '<li>' + format_time(nextHour) + ': ' + hourlyTemps[0] + '&deg;F</li>';
+    // Get the next hour based on the current time
+    let date = new Date();
+    let nextHour = date.getHours() + 1;
+    // Build the remaining list items using a for loop
+    for (let i = 1, x = hourlyTemps.length; i < x; i++) {
+        hourlyListItems += '<li>' + format_time(nextHour + i) + ': ' + hourlyTemps[i] + '&deg;F</li>';
+    }
+    console.log('HourlyList is: ' + hourlyListItems);
+    return hourlyListItems;
+}
+
+
+
+// fetch(URL)
+//     .then(function (response) {
+//         if (response.ok) {
+//             return response.json();
+//         }
+//         throw new ERROR('Network response was not OK.');
+//     })
+//     .then(function (data) {
+//    ... do something with the JavaScript object ...
+//  })
+//  .catch (function(error) {
+//     console.log('There was a fetch problem: ', error.message);
+// })
