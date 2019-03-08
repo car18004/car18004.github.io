@@ -8,7 +8,7 @@ let pageNav = document.getElementById('page-nav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main-content');
 
-let weatherURL = "path/to/weather.json";
+let weatherURL = "/weather/js/weather.json";
 
 function fetchData(weatherURL) {
     let cityName = 'Greenville'; // The data we want from the weather.json file
@@ -35,7 +35,6 @@ function fetchData(weatherURL) {
             let fullName = locName + ', ' + locState;
             // See if it worked
             console.log('fullName is: ' + fullName);
-
             // Get the temperature data
 
 
@@ -67,9 +66,7 @@ function fetchData(weatherURL) {
 
             // Set the temperature information
 
-
             // Set the wind information
-
 
             // Set the current conditions information
 

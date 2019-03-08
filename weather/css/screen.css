@@ -192,6 +192,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 /* ___________________________________________________ */
 
@@ -243,9 +244,6 @@ h3 {
     font-size: 20px;
     margin-top: -85px;
     margin-bottom: 70px;
-    /* position: absolute;
-    top: 53%;
-    left: 42.5%; */
 }
 /*-----------------------------------*/
 .windinfo{
@@ -369,7 +367,42 @@ h3#wind_title{
         background-image: url(/weather/images/snow_400.jpg);
     }
 
+    .rain-small {
+        content: url("/weather/images/raindrops_150.jpg");
+    }
+
+    .cloud-small {
+        content: url("/weather/images/clouds_300.jpg");
+    }
+
+    .clear-small {
+        content: url("/weather/images/clear_300.jpg");
+    }
+
+    .fog-small {
+        content: url("/weather/images/fog_300.jpg");
+    }
+
+    .snow-small {
+        content: url("/weather/images/snow_300.jpg");
+    }
+
     #forecast{
         max-width: 100%;
     }
+
+    #weatherImage {
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    #forecast ul {
+        overflow: auto;
+        white-space: nowrap;
+        margin-top: 0px;
+        padding-left: 5px;
+        font-size: 15.5px;
+    }
+
+
 }
