@@ -278,6 +278,16 @@ h3 {
 h3#wind_title{
     margin-bottom: 20px;
 }
+
+.hide {
+    display: none;
+}
+
+#status{
+    margin-top: 20px;
+    margin-bottom: 620px;
+    margin-left: 20px;
+}
 /* Section 4 - Larger Screen Rules */
 
 @media screen and (min-width: 800px){
