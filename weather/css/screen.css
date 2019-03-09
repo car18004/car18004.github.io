@@ -113,6 +113,10 @@ h3#wind{
 /* ---------------------------------- */
 
 
+nav ul li a {
+   text-decoration: none;
+   color: white;
+}
 nav ul li {
     display: inline-block;
     list-style: none;

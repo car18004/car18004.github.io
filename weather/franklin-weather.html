@@ -14,14 +14,13 @@
         </header>
         <nav id="page-nav">
             <ul>
-                <li>Current</li>
-                <li>Search</li>
-                <li>Franklin</li>
-                <li>Greenville</li>
+                <li><a href="franklin-weather.html" title="Go to weather site home page"> Current</a></li>
+                <li><a href="franklin-weather.html" title="Search the website">Search</a></li>
+                <li><a href="franklin-weather.html" title="Go to Franklin section of home page">Franklin</a></li>
+                <li><a href="greenville-weather.html" title="Go to Greenville section of home page">Greenville</a></li>
             </ul>
         </nav>
-        <section id="status">Please be patient while I get your weather information.</section>
-        <main id="main-content" class="hide">
+        <main>
             <h2 id="location">Franklin, Idaho</h2>
             <p id="info"><b>Zip:</b> 83237| <b>Elevation:</b> <span id="elevation">1514.246</span> ft.| <b>Location:</b> 42.07° N, 111.79° W</p> 
 
@@ -30,17 +29,16 @@
                     <h3 id="temptitle">Temperature</h3>
                     <p id="current">40°F</p>
                     <p id="high" class="highlow">64°F</p>
-                    <p id="low" class="highlow">41°F</p>     
-                    <p id="feel">Feels Like <span id="feelTemp">??</span>°F</p>
+                    <p id="low"  class="highlow">41°F</p>     
+                    <p id="feel">Feels Like <span id="feelTemp"></span>°F</p>
                 </div>
 
                 <div id="wind" class="tile">
                     <h3 id="wind_title">Wind</h3>
-                    <div id="dial" class="w"></div>
-
+                    <div id="dial" class="sw"></div>
                     <div id="mph">5 mph</div>
-                        <p class="windinfo" id="wind_direction"><b>Direction:</b> SW</p>
-                        <p class="windinfo"><b>Gusts:</b>10-12mph</p>
+                        <p class="windinfo" id="wind_direction"><b>Direction: </b>SW</p>
+                        <p class="windinfo"><b>Gusts: </b>10-12 mph</p>
                     </div>
 
                     <div id="summary" class="tile">
@@ -73,6 +71,5 @@
             &copy;2019, The Weather Site
         </footer>
         <script src="/weather/js/functions.js"></script>
-        <script src="/weather/js/localdata.js"></script>
     </body>
 </html>

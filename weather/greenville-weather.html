@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title id="page-title">Franklin, ID | Weather Site</title>
+    <title id="page-title"> | Weather Site</title>
     <link rel="stylesheet" type="text/css" href="css/screen.css">
-    <meta name="description" content="Franklin, Idaho weather site">
+    <meta name="description" content="Greenville, SC weather site">
     <meta name="viewport" content="width=device-width">
 </head>
 
@@ -14,16 +14,16 @@
         <img id="logo" src="/weather/images/logo.jpeg" alt="logo-image">
         <h1 id="site-brand">The Weather Site</h1>
     </header>
-    <nav id="page-nav">
+    <nav id="pageNav">
         <ul>
-            <li>Current</li>
-            <li>Search</li>
-            <li>Franklin</li>
-            <li>Greenville</li>
+                <li><a href="franklin-weather.html" title="Go to weather site home page"> Current</a></li>
+                <li><a href="franklin-weather.html" title="Go to weather site home page">Search</a></li>
+                <li><a href="franklin-weather.html" title="Go to weather site home page">Franklin</a></li>
+                <li><a href="greenville-weather.html" title="Go to weather site home page">Greenville</a></li>
         </ul>
     </nav>
-    <section id="status">Please be patient while I get your weather information.</section>
-    <main id="main-content" class="hide">
+    <div id="statusMessage" class="">Please be patient while I get your weather information.</div>
+    <main id="mainContent" class="hide">
         <h2 id="location">Franklin, Idaho</h2>
         <p id="info"><b>Zip:</b> 83237| <b>Elevation:</b> <span id="elevation">1514.246</span> ft.| <b>Location:</b>
             42.07° N, 111.79° W</p>
@@ -31,10 +31,10 @@
         <div id="cur-weather">
             <div id="temps" class="tile">
                 <h3 id="temptitle">Temperature</h3>
-                <p id="current">40°F</p>
-                <p id="high" class="highlow">64°F</p>
-                <p id="low" class="highlow">41°F</p>
-                <p id="feel">Feels Like <span id="feelTemp">??</span>°F</p>
+                <p id="current"></p>
+                <p id="high" class="highlow"></p>
+                <p id="low" class="highlow"></p>
+                <p id="feel"><span id="feelTemp">??</span></p>
             </div>
 
             <div id="wind" class="tile">
@@ -42,8 +42,8 @@
                 <div id="dial" class="w"></div>
 
                 <div id="mph">5 mph</div>
-                <p class="windinfo" id="wind_direction"><b>Direction:</b> SW</p>
-                <p class="windinfo"><b>Gusts:</b>10-12mph</p>
+                <p class="windinfo"><b>Direction: </b><span id="wind_direction"></span></p>
+                <p class="windinfo"><b>Gusts: </b><span id="gusts"></span></p>
             </div>
 
             <div id="summary" class="tile">
@@ -54,21 +54,7 @@
 
         <section id="forecast" class="tile">
             <h3 id="hourly_forecast"><b>Hourly Forecast</b></h3>
-            <ul>
-                <li>10am: 41&deg;F |</li>
-                <li>11am: 41&deg;F |</li>
-                <li>12am: 41&deg;F |</li>
-                <li>1pm: 41&deg;F |</li>
-                <li>2pm: 41&deg;F |</li>
-                <li>3pm: 41&deg;F |</li>
-                <li>4pm: 42&deg;F |</li>
-                <li>5pm: 44&deg;F |</li>
-                <li>6pm: 44&deg;F |</li>
-                <li>7pm: 46&deg;F |</li>
-                <li>8pm: 49&deg;F |</li>
-                <li>9pm: 51&deg;F |</li>
-                <li>10pm: 55&deg;F </li>
-            </ul>
+            <ul id="hourlyLI"></ul>
         </section>
 
     </main>
