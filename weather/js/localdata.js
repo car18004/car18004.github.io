@@ -48,7 +48,19 @@ function fetchData(weatherURL) {
             // Get the hourly data 
             let hourly = g.Hourly;
             console.log("Hourlies of " + hourly);
-
+            //get the zip
+            let zip = g.Zip;
+            console.log(zip);
+            // get the elevation
+            let elevation = g.Elevation;
+            console.log(elevation);
+            // //get the location
+            let latitude = g.Latitude;
+            console.log(latitude);
+            let longitude = g.Longitude;
+            console.log(longitude);
+            
+            
             // ************ Display the content ******************************
             // Set the title with the location name at the first
             // Gets the title element so it can be worked with
@@ -59,7 +71,7 @@ function fetchData(weatherURL) {
             pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
             // When this is done the title should look something like this:
             // Greenville, SC | The Weather Site
-            // Set the Location information
+            // Set the Location information/
             // Get the h1 to display the city location
             let contentHeading = document.getElementById('location');
             contentHeading.innerHTML = fullName;
@@ -74,6 +86,16 @@ function fetchData(weatherURL) {
                 document.getElementById("gusts").innerHTML = gusts + " mph";
                 document.getElementById("wind_direction").innerHTML = direction;
                 windDial(direction);
+            //Set zip
+                document.getElementById("zip").innerHTML = zip;
+            //set elevation
+                let feet = convertMeters(elevation);
+               document.getElementById("elevation").innerHTML = feet;
+                // let meters = document.getElementById("elevation").innerText;
+                // elevation.innerHTML = convertMeters(meters);
+            //set location
+                document.getElementById("latitude").innerHTML = latitude;
+                document.getElementById("longitude").innerHTML = longitude;
             // Set the current conditions information
                 document.getElementById("summary_title").innerHTML = summary;
                 let condition = getCondition(weather);
