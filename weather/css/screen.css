@@ -253,6 +253,10 @@ h3 {
 .windinfo{
     font-size: 12px;
 }
+
+p#feel{
+    margin-top: 10px;
+}
 /*-----------------------------------*/
 .weatherpic {
     margin-bottom: 20px;
