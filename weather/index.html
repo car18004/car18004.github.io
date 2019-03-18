@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title id="page-title"> | Weather Site</title>
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <meta name="description" content="Greenville, SC weather site">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <header id="page-header">
+        <img id="logo" src="/weather/images/logo.jpeg" alt="logo-image">
+        <h1 id="site-brand">The Weather Site</h1>
+    </header>
+    <nav id="pageNav">
+        <ul>
+            <li><a href="franklin-weather.html" title="Go to weather site home page"> Current</a></li>
+            <li><a href="franklin-weather.html" title="Go to weather site home page">Search</a></li>
+            <li><a href="franklin-weather.html" title="Go to weather site home page">Franklin</a></li>
+            <li><a href="greenville-weather.html" title="Go to weather site home page">Greenville</a></li>
+        </ul>
+    </nav>
+    <div id="statusMessage" class="">Please be patient while I get your weather information.</div>
+    <main id="mainContent" class="hide">
+        <h2 id="location"></h2>
+        <p id="info"><b>Zip: </b><span id="zip"></span>| <b>Elevation:</b> <span id="elevation"></span> ft.| <b>Location:
+            </b><span id="latitude"></span>° N, <span id="longitude"></span>° W</p>
+        <div id="cur-weather">
+            <div id="temps" class="tile">
+                <h3 id="temptitle">Temperature</h3>
+                <p id="current"></p>
+                <p id="high" class="highlow"></p>
+                <p id="low" class="highlow"></p>
+                <p id="feel"><span id="feelTemp">??</span></p>
+            </div>
+
+            <div id="wind" class="tile">
+                <h3 id="wind_title">Wind</h3>
+                <div id="dial" class="w"></div>
+
+                <div id="mph">5 mph</div>
+                <p class="windinfo"><b>Direction: </b><span id="wind_direction"></span></p>
+                <p class="windinfo"><b>Gusts: </b><span id="gusts"></span></p>
+            </div>
+
+            <div id="summary" class="tile">
+                <h3 id="summary_title"></h3>
+                <div id="weatherImage" class="rain"></div>
+            </div>
+        </div>
+
+        <section id="forecast" class="tile">
+            <h3 id="hourly_forecast"><b>Hourly Forecast</b></h3>
+            <ul id="hourlyLI"></ul>
+        </section>
+
+    </main>
+    <footer>
+        &copy;2019, The Weather Site
+    </footer>
+    <script src="/weather/js/functions.js"></script>
+    <script src="/weather/js/localdata.js"></script>
+</body>
+
+</html>
