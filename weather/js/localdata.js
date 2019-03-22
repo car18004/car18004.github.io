@@ -112,4 +112,7 @@ function fetchData(weatherURL) {
             console.log('There was a fetch problem: ', error.message);
             statusContainer.innerHTML = 'Sorry, the data could not be processed.';
         })
+
+
+        
 }

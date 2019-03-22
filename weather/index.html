@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title id="page-title"> | Weather Site</title>
+    <title id="pageTitle"> | Weather Site</title>
     <link rel="stylesheet" type="text/css" href="css/screen.css">
-    <meta name="description" content="Greenville, SC weather site">
+    <meta name="description" content="Current weather site">
     <meta name="viewport" content="width=device-width">
 </head>
-
+<!-- Collaboration Team:
+     Maren Stewart
+     Brianna Marsh
+     Chad Carroll
+-->
 <body>
     <header id="page-header">
         <img id="logo" src="/weather/images/logo.jpeg" alt="logo-image">
@@ -16,7 +20,7 @@
     </header>
     <nav id="pageNav">
         <ul>
-            <li><a href="franklin-weather.html" title="Go to weather site home page"> Current</a></li>
+            <li><a href="index.html" title="Find your current weather"> Current</a></li>
             <li><a href="franklin-weather.html" title="Go to weather site home page">Search</a></li>
             <li><a href="franklin-weather.html" title="Go to weather site home page">Franklin</a></li>
             <li><a href="greenville-weather.html" title="Go to weather site home page">Greenville</a></li>
@@ -25,22 +29,22 @@
     <div id="statusMessage" class="">Please be patient while I get your weather information.</div>
     <main id="mainContent" class="hide">
         <h2 id="location"></h2>
-        <p id="info"><b>Zip: </b><span id="zip"></span>| <b>Elevation:</b> <span id="elevation"></span> ft.| <b>Location:
-            </b><span id="latitude"></span>° N, <span id="longitude"></span>° W</p>
+        <p id="info"><b>Zip:</b> 83440 <span id="zip"></span>| <b>Elevation:</b> <span id="elevation"></span> ft.|
+            <b>Location: </b><span id="latlong"></span></p>
         <div id="cur-weather">
             <div id="temps" class="tile">
                 <h3 id="temptitle">Temperature</h3>
                 <p id="current"></p>
                 <p id="high" class="highlow"></p>
                 <p id="low" class="highlow"></p>
-                <p id="feel"><span id="feelTemp">??</span></p>
+                <p id="feel"><span id="feelTemp"></span></p>
             </div>
 
             <div id="wind" class="tile">
                 <h3 id="wind_title">Wind</h3>
                 <div id="dial" class="w"></div>
 
-                <div id="mph">5 mph</div>
+                <span id="mph"></span>
                 <p class="windinfo"><b>Direction: </b><span id="wind_direction"></span></p>
                 <p class="windinfo"><b>Gusts: </b><span id="gusts"></span></p>
             </div>
@@ -61,7 +65,7 @@
         &copy;2019, The Weather Site
     </footer>
     <script src="/weather/js/functions.js"></script>
-    <script src="/weather/js/localdata.js"></script>
+    <script src="/weather/js/geo_loc.js"></script>
 </body>
 
 </html>
