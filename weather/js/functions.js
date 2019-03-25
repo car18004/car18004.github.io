@@ -372,3 +372,8 @@ function buildPage() {
     mainContent.setAttribute('class','');
     statusMessage.setAttribute('class', 'hide');
 }
+
+function convertToFahrenheit(c){
+    let f = c * (9/5) + 32;
+    return f;
+}
