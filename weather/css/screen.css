@@ -320,7 +320,7 @@ h3#wind_title{
         padding-bottom: 5px;
     }
 /*------------------------------------*/
-    #mph {
+    span#mph {
         top: 45.5%;
         left: 48.5%;
     }

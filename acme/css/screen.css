@@ -1,0 +1,67 @@
+/* This is the style sheet for the Weather Site  */
+
+/* Table of Contents
+1. Imports
+2. General Rules
+3. Mobile First Rules 
+4. Larger Screen Rules  */
+
+/* Section 1 - Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('normalize.css');
+
+/* Section 2 - General Rules */
+
+html {
+    box-sizing: border-box;
+}
+/*-----------------------------------*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*-----------------------------------*/
+body {
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
+}
+/*-----------------------------------*/
+h2,h3,h4,h5,h6 {
+    font-family: sansita, Eurostyle, sans-serif;
+  }
+/*-----------------------------------*/
+body {
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #de2226;
+    font-size: 17px;
+    color: white;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+}
+nav ul li a {
+   text-decoration: none;
+   color: white;
+}
+
+
+footer {
+    width: 100%;
+}
+#logo {
+    float: left;
+}
+/*-----------------------------------*/
+
+/* Section 4 - Larger Screen Rules */
