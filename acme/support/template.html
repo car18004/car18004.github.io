@@ -13,28 +13,21 @@
      Brianna Marsh
      Chad Carroll
 -->
+
 <body>
+    <header id="page-header">
+        <img id="logo" src="/acme/images/site/logo.png" alt="logo-image">
+    </header>
+    <nav id="pageNav">
+        <ul>
+            <li><a href="index.html" title="home"> Home</a></li>
+            <li>Anvils</li>
+            <li>Explosives</li>
+            <li>Decoys</li>
+            <li>Traps</li>
+        </ul>
+    </nav>
     <main id="maintext">
-        <header id="page-header">
-            <img id="logo" src="/acme/images/site/logo.png" alt="logo-image">
-        </header>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <nav id="pageNav">
-            <ul>
-                <li><a href="index.html" title="home"> Home</a></li>
-                <li>Anvils</li>
-                <li>Explosives</li>
-                <li>Decoys</li>
-                <li>Traps</li>
-            </ul>
-        </nav>
-        <br>
     <!--<main id="mainContent" class="hide">-->
             <h1 id="welcome">Welcome to Acme!</h1>
                 <div id="imageTile">
@@ -46,22 +39,10 @@
                         <li class="adDesc"><a href="#"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a></li>
                     </ul>
                 </div>
-                <div id="recipes" class="section">
-                    <h3 id="featuredRecipes">Featured Recipes</h3>
-                    <ul id="roadRecipes">
-                        <li><img src="/acme/images/recipes/bbqsand.jpg" alt="BBQ"></li>
-                        <li><a href="" title="home">Pulled Roadrunner BBQ</a></li>
-                        <li><img src="/acme/images/recipes/potpie.jpg" alt="Pot Pie"></li>
-                        <li><a href="" title="home">Roadrunner Pot Pie</a></li>
-                        <li><img src="/acme/images/recipes/soup.jpg" alt="Soup"></li>
-                        <li><a href="" title="home">Roadrunner Soup</a></li>
-                        <li><img src="/acme/images/recipes/taco.jpg" alt="Tacos"></li>
-                        <li><a href="" title="home">Roadrunner Tacos</a></li>
-                    </ul> 
-                </div>
+
                 <div id="reviews" class="section">
                     <h3 id="rocketReviews">Acme Rocket Reviews</h3>
-                    <ul>
+                    <ul id="liReviews">
                         <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
                         <li>"That thing was fast!" (4/5)</li>
                         <li>"Talk about fast delivery." (5/5)</li>
@@ -69,6 +50,30 @@
                         <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
                     </ul>
                 </div>
+
+                <div id="recipes" class="section">
+                    <h3 id="featuredRecipes">Featured Recipes</h3>
+                    <figure>
+                        <img src="/acme/images/recipes/bbqsand.jpg" alt="BBQ">     
+                        <figcaption><a href="#">Pulled Roadrunner BBQ</a></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="/acme/images/recipes/potpie.jpg" alt="Pot Pie">
+                        <figcaption><a href="#">Roadrunner Pot Pie</a></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="/acme/images/recipes/soup.jpg" alt="Soup">
+                        <figcaption><a href="#">Roadrunner Soup</a></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="/acme/images/recipes/taco.jpg" alt="Tacos">
+                        <figcaption><a href="#">Roadrunner Tacos</a></figcaption>
+                    </figure>
+                </div>
+                
                 <footer>
                     &copy;2019, ACME Inc., All rights reserved <br>
                     All images used are believed to be in "Fair Use". Please

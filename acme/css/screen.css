@@ -11,7 +11,7 @@
 @import url('normalize.css');
 /* Section 2 - General Rules */
 html {
-    box-sizing: border-box;
+    background-image: url("/acme/images/site/background.jpg");
 }
 /*-----------------------------------*/
 *, *:before, *:after {
@@ -21,97 +21,187 @@ html {
 body {
     font-size: 18px;
     font-family: Helvetica, Arial, sans-serif;
-    background-image: url("/acme/images/site/background.jpg");
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    
 }
-/*-----------------------------------*/
-#logo {
-    float: left;
-    margin-left: 10px;
-}
-/*-----------------------------------*/
-nav {
-    position: absolute;
-    width: 88.2%;
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding-left:10px;
+    height: 40px;
     background-color: #de2226;
     font-size: 17px;
     color: white;
 }
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0;
-}
+
 nav ul li {
-    display: inline-block;
     list-style: none;
     margin-right: 10px;
 }
+
 nav ul li a {
-   text-decoration: none;
-   color: white;
+    text-decoration: none;
+    color: white;
 }
-/*-----------------------------------*/
+
 h1#welcome {
-    margin-left: 10px;
-    margin-bottom: 5px;
-    font-size: 50px;
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+/*----\-------------------------------*/
+#logo {
+    margin-left: 20px;
 }
 /*-----------------------------------*/
-#maintext{
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-bottom: 50px;
-    background-color: white;
-}
 #imageTile {
     background-image: url("/acme/images/site/feature.jpg");
-    height: 400px;
+    background-size: cover;
+    height: 200px;
 }
 #adtitle {
     padding-top: 15px;
     margin-top: 0;
     margin-bottom: 5px;
-    font-size: 58px;
-}
-.adDesc{
-font-size: 28px
-}
-ul#ad{
-     list-style: none;
-     padding: 0;
-     margin-top: 0;
-     margin-left: 940px;
-}
-#actionbtn{
-    width: 370px;
-    padding-top: 10px;
-}
-/*-----------------------------------*/
-div#recipes.section{
-    width: 549.2px;
-    margin-right: 0;
-}
-ul#roadRecipes{
-   list-style: none;
-   margin-left: 10px;
-   padding: 0;
-}
-h3#featuredRecipes{
-    margin-left: 10px;
-}
-/*-----------------------------------*/
-div#reviews.section{
-    width: 549.2px;
-}
-/*-----------------------------------*/
-footer {
-    width: 100%;
+    font-size: 20px;
     text-align: center;
 }
-/*-----------------------------------*/
+.adDesc {
+    text-align: center;
+    font-size: 9px
+}
 
+ul#ad {
+    list-style: none;
+    padding-left: 175px;
+    margin-top: 0px;
+}
+h1#welcome {
+    margin-bottom: 5px;
+}
+#actionbtn {
+    width: 130px;
+    padding-top: 10px;
+}
+
+h3#rocketReviews{
+    text-align: center;
+    margin-top: 5px;
+}
+
+#liReviews{
+    font-size: 13px;
+    padding-left: 30px;
+}
+#featuredRecipes {
+     text-align: center;
+}
+
+ footer {
+     font-size: 10px;
+     width: 100%;
+     text-align: center;
+     border-top: 5px solid black;
+ }
 /* Section 4 - Larger Screen Rules */
 @media screen and (min-width: 800px) {
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding-left: 10px;
+        height: 60px;
+        background-color: #de2226;
+        font-size: 22px;
+        color: white;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin-right: 20px;
+    }
     
+    h1#welcome {
+        margin-left:-85px;
+        margin-bottom: 5px;
+        margin-top: 0;
+        font-size: 50px;
+        text-align: left;
+    }
+
+    /*-----------------------------------*/
+    #maintext {
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-bottom: 50px;
+        background-color: white;
+    }
+
+    #imageTile {
+        background-image: url("/acme/images/site/feature.jpg");
+        height: 400px;
+        width: 115.3%;
+        margin-left: -90px;
+    }
+
+    #adtitle {
+        padding-top: 15px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 58px;
+    }
+
+    .adDesc {
+        font-size: 28px
+    }
+
+    ul#ad {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 940px;
+    }
+
+    #actionbtn {
+        width: 370px;
+        padding-top: 10px;
+    }
+
+    /*-----------------------------------*/
+    div#recipes.section {
+        width: 549.2px;
+        margin-right: 0;
+    }
+
+    ul#roadRecipes {
+        list-style: none;
+        margin-left: 10px;
+        padding: 0;
+    }
+
+    h3#featuredRecipes {
+        margin-left: 10px;
+    }
+
+    /*-----------------------------------*/
+    div#reviews.section {
+        width: 549.2px;
+    }
+
+    /*-----------------------------------*/
+    footer {
+        margin-left: -90px;
+        width: 115.4%;
+        font-size: 20px;
+        text-align: center;
+        border-top: 5px solid black;
+    }
+
+    /*-----------------------------------*/
 
     }
