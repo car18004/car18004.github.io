@@ -7,12 +7,9 @@
 4. Larger Screen Rules  */
 
 /* Section 1 - Imports */
-
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 @import url('normalize.css');
-
 /* Section 2 - General Rules */
-
 html {
     box-sizing: border-box;
 }
@@ -22,21 +19,19 @@ html {
 }
 /*-----------------------------------*/
 body {
-    font-family: helvetica, verdana, sans-serif;
-    font-size: 20px;
-}
-/*-----------------------------------*/
-h2,h3,h4,h5,h6 {
-    font-family: sansita, Eurostyle, sans-serif;
-  }
-/*-----------------------------------*/
-body {
     font-size: 18px;
     font-family: Helvetica, Arial, sans-serif;
+    background-image: url("/acme/images/site/background.jpg");
 }
+/*-----------------------------------*/
+#logo {
+    float: left;
+    margin-left: 10px;
+}
+/*-----------------------------------*/
 nav {
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    width: 88.2%;
     background-color: #de2226;
     font-size: 17px;
     color: white;
@@ -44,6 +39,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-around;
+    padding-left: 0;
 }
 nav ul li {
     display: inline-block;
@@ -54,14 +50,68 @@ nav ul li a {
    text-decoration: none;
    color: white;
 }
-
-
+/*-----------------------------------*/
+h1#welcome {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+/*-----------------------------------*/
+#maintext{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+#imageTile {
+    background-image: url("/acme/images/site/feature.jpg");
+    height: 400px;
+}
+#adtitle {
+    padding-top: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 58px;
+}
+.adDesc{
+font-size: 28px
+}
+ul#ad{
+     list-style: none;
+     padding: 0;
+     margin-top: 0;
+     margin-left: 940px;
+}
+#actionbtn{
+    width: 370px;
+    padding-top: 10px;
+}
+/*-----------------------------------*/
+div#recipes.section{
+    width: 549.2px;
+    margin-right: 0;
+}
+ul#roadRecipes{
+   list-style: none;
+   margin-left: 10px;
+   padding: 0;
+}
+h3#featuredRecipes{
+    margin-left: 10px;
+}
+/*-----------------------------------*/
+div#reviews.section{
+    width: 549.2px;
+}
+/*-----------------------------------*/
 footer {
     width: 100%;
-}
-#logo {
-    float: left;
+    text-align: center;
 }
 /*-----------------------------------*/
 
 /* Section 4 - Larger Screen Rules */
+@media screen and (min-width: 800px) {
+    
+
+    }
