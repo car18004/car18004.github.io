@@ -12,6 +12,7 @@
 /* Section 2 - General Rules */
 html {
     background-image: url("/acme/images/site/background.jpg");
+    background-size: cover;
 }
 /*-----------------------------------*/
 *, *:before, *:after {
@@ -24,9 +25,11 @@ body {
     background-color: white;
     width: 90%;
     margin: auto;
-    
 }
 
+.hide{
+    display: none;
+}
 nav ul {
     display: flex;
     align-items: center;
@@ -53,7 +56,7 @@ h1#welcome {
     font-size: 30px;
     text-align: center;
 }
-/*----\-------------------------------*/
+/*-----------------------------------*/
 #logo {
     margin-left: 20px;
 }
@@ -96,10 +99,33 @@ h3#rocketReviews{
 #liReviews{
     font-size: 13px;
     padding-left: 30px;
+    margin-bottom: 0px;
 }
 #featuredRecipes {
-     text-align: center;
+   margin-top: 5px;
+   margin-left: 81.0685px;
+   margin-right: 81.0685px;
 }
+
+.recipe_images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #808080;
+    width: 44%;
+    margin:10px;
+}
+#recipes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.recipe_caption {
+    text-align: center;
+    background-color: white;
+}
+
 
  footer {
      font-size: 10px;
@@ -128,14 +154,14 @@ h3#rocketReviews{
     
     h1#welcome {
         margin-left:-85px;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
         margin-top: 0;
         font-size: 50px;
         text-align: left;
     }
 
     /*-----------------------------------*/
-    #maintext {
+    #mainContent {
         margin-left: 90px;
         margin-right: 90px;
         margin-bottom: 50px;
@@ -164,7 +190,7 @@ h3#rocketReviews{
         list-style: none;
         padding: 0;
         margin-top: 0;
-        margin-left: 940px;
+        margin-left:70%;
     }
 
     #actionbtn {
@@ -172,31 +198,64 @@ h3#rocketReviews{
         padding-top: 10px;
     }
 
+    #bigDiv{
+        display: flex;
+    }
     /*-----------------------------------*/
     div#recipes.section {
-        width: 549.2px;
         margin-right: 0;
+        display: flex;
+        order: 0;
+        margin-left: -70px;
+        width: 50%;
     }
+        h3#featuredRecipes {
+            margin-left: 135px;
+            margin-right: 81px;
+            align-content: center;
+            height: 20px;
+            font-size: 30px;
+        }
 
-    ul#roadRecipes {
-        list-style: none;
-        margin-left: 10px;
-        padding: 0;
-    }
+            ul#roadRecipes {
+                list-style: none;
+                margin-left: 10px;
+                padding: 0;
+            }
+            .recipe_images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #808080;
+                width: 40%;
+                margin: 10px;
+            }
 
-    h3#featuredRecipes {
-        margin-left: 10px;
-    }
-
+            figcaption{
+                width: 100%;
+            }
     /*-----------------------------------*/
     div#reviews.section {
-        width: 549.2px;
+        display: flex;
+        order: 1;
+        width: 50%;
     }
-
+        h3#rocketReviews {
+            align-content: center;
+            font-size: 30px;
+            }
+        
+            #reviews{
+                display: flex;
+                flex-direction: column;
+            }
+                #liReviews {
+                    font-size: 20px;
+                }
     /*-----------------------------------*/
     footer {
         margin-left: -90px;
-        width: 115.4%;
+        width: 115%;
         font-size: 20px;
         text-align: center;
         border-top: 5px solid black;
