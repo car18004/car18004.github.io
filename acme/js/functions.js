@@ -38,7 +38,7 @@ function buildNav(navItems){
 }
 
 function clickListeners(){
-    document.getElementById("navHome").addEventListener("click", clickHome);
+    document.getElementById("#navHome").addEventListener("click", clickHome);
 
     let anvils = document.querySelector("#navAnvils");
     anvils.myParam = "Anvils";
