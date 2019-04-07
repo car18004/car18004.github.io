@@ -31,14 +31,14 @@ function buildNav(navItems){
         let li = document.createElement('li');
         let text = document.createTextNode(navItems[i]);
         li.appendChild(text);
-        li.setAttribute("id", + "nav" + navItems[i]);
+        li.setAttribute("id", "nav" + navItems[i]);
         ul.appendChild(li);
     }
     clickListeners();
 }
 
 function clickListeners(){
-    document.getElementById("#navHome").addEventListener("click", clickHome);
+    document.getElementById("navHome").addEventListener("click", clickHome);
 
     let anvils = document.querySelector("#navAnvils");
     anvils.myParam = "Anvils";
@@ -79,11 +79,11 @@ function clickNav(event){
             let o = data[event.target.myParam];
             console.log("Ya done clicked " + event.target.myParam);
             document.getElementById("item_title").innerHTML = o.name;
-            document.getElementById("item_picture").setAttribute("src", o.path);
+            document.getElementById("itemPicture").setAttribute("src", o.path);
             document.getElementById("item_desc").innerHTML = o.description;
-            document.getElementById("item_details").innerHTML = o.manufacturer;
-            document.getElementById("item_reviews").innerHTML = o.reviews;
-            document.getElementById("item_price").innerHTML = o.price;
+            document.getElementById("item_manufac").innerHTML = o.manufacturer;
+            document.getElementById("item_reviews").innerHTML = o.reviews + "/5 stars";
+            document.getElementById("item_price").innerHTML = "$" + o.price;
         })
     }
 }

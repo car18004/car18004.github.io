@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title id="pageTitle"> ACME | Home Page</title>
-    <link rel="stylesheet" type="text/css" href="/acme/css/screen.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/acme/css/screen_minify.css">
     <meta name="description" content="ACME Home Page">
     <meta name="viewport" content="width=device-width">
 </head>
@@ -70,23 +70,23 @@
                         </div>
                     </div>
                 </div>
-                <div id="items" class="hide">
+                <section id="items" class="hide">
                     <h2 id="item_title"></h2>
-                    <div id="item_picture"></div>
-                    <div id="item_desc"></div>
-                    <div id="item_details">
-                        <b>Made By:</b><span id="item_manufac"></span>
-                        <b>Reviews:</b><span id="item_reviews"></span>
-                    </div>
-                    <div id="item_price"></div>
-                </div>
+                    <img id="itemPicture" src="/acme/images/recipes/bbqsand.jpg">
+                    <p id="item_desc"></p>
+                    <ul id="item_details">
+                        <li><b>Made By: </b><span id="item_manufac"></span></li>
+                        <li><b>Reviews: </b><span id="item_reviews"></span></li>
+                    </ul>
+                    <p id="item_price"></p>
+                </section>
         <footer>
              &copy;2019, ACME Inc., All rights reserved <br>
              All images used are believed to be in "Fair Use". Please
              notify the author if any are not and they will be removed.
         </footer>
     </main>
-    <script src="/acme/js/functions.js"></script>
+    <script src="/acme/js/functions_mini.js"></script>
 </body>
 
 </html>

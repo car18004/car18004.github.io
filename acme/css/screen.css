@@ -125,8 +125,39 @@ h3#rocketReviews{
     text-align: center;
     background-color: white;
 }
+#item_title {
+    text-align: center;
+    margin: 5px;
+    font-size: 30px;
+}
 
+#item_desc {
+    margin: auto;
+    margin-left: 7px;
+    font-size: 20px;
+    text-align: center;
+}
 
+#itemPicture {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#item_details {
+    list-style: none;
+    margin-left: 50px;
+}
+
+#item_price {
+    margin-top: 0;
+    margin-left: 110px;
+    margin-right: 0px;
+    width: auto;
+    font-size: 40px;
+    font-weight: bold;
+    color: #de2226;
+}
  footer {
      font-size: 10px;
      width: 100%;
@@ -252,6 +283,38 @@ h3#rocketReviews{
                 #liReviews {
                     font-size: 20px;
                 }
+    #item_title {
+        text-align: left;
+        margin: 5px;
+        margin-left: -80px;
+        font-size: 50px;
+    }
+    #item_desc{
+      width: 500px;
+      margin: auto;
+      margin-top: -380px;
+      margin-right: 0px;
+      font-size: 30px;
+      text-align: left;
+    }
+    #itemPicture{
+        margin-bottom: 50px;
+        width: auto;
+    }
+    #item_details{
+        margin-left: 650px;
+        list-style: none;
+    }
+    #item_price{
+        margin-top: 0;
+        margin-right: 0px;
+        margin-left: 690px;
+        width: auto;
+        font-weight: bold;
+        font-size: 50px;
+        
+        color: #de2226;
+    }
     /*-----------------------------------*/
     footer {
         margin-left: -90px;

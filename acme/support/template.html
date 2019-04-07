@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en-us">
-
 <head>
     <meta charset="UTF-8">
     <title id="pageTitle"> ACME | Home Page</title>
-    <link rel="stylesheet" type="text/css" href="/acme/css/screen.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/acme/css/screen.css">
     <meta name="description" content="ACME Home Page">
     <meta name="viewport" content="width=device-width">
 </head>
@@ -18,22 +17,17 @@
         <img id="logo" src="/acme/images/site/logo.png" alt="logo-image">
     </header>
     <nav id="pageNav">
-        <ul>
-            <li><a href="index.html" title="home"> Home</a></li>
-            <li>Anvils</li>
-            <li>Explosives</li>
-            <li>Decoys</li>
-            <li>Traps</li>
-        </ul>
+        <ul id="navUl"></ul>
+        <noscript> Please enable javascript in order to see this website!</noscript>
     </nav>
-    <main id="maintext">
-    <!--<main id="mainContent" class="hide">-->
+    <main id="mainContent">
             <h1 id="welcome">Content Title Here</h1>
                 <footer>
                     &copy;2019, ACME Inc., All rights reserved <br>
                     All images used are believed to be in "Fair Use". Please
                     notify the author if any are not and they will be removed.
                 </footer>
+    <script src="/acme/js/functions.js"></script>
     </main>
 </body>
 </html>
