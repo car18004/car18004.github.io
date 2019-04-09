@@ -5,7 +5,13 @@ let statusContainer = document.getElementById('statusMessage');
 let contentContainer = document.getElementById('mainContent');
 
 let acmeURL = "/acme/js/acme.json";
-console.log(data);
+
+
+
+function loggingData(acmeURL){
+    fetch(acmeURL)
+            console.log(data);
+            }
 
 fetchNav(acmeURL);
 function fetchNav(acmeURL){
