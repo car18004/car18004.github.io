@@ -73,6 +73,7 @@ function clickNav(event){
             throw new ERROR('Network response was not OK.');
         })
         .then(function (data) {
+            console.log(data);
             document.getElementById("home").setAttribute("class", "hide");
             document.getElementById("items").setAttribute("class", "");
 
