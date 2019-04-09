@@ -7,12 +7,6 @@ let contentContainer = document.getElementById('mainContent');
 let acmeURL = "/acme/js/acme.json";
 
 
-
-function loggingData(acmeURL){
-    fetch(acmeURL)
-            console.log(data);
-            }
-
 fetchNav(acmeURL);
 function fetchNav(acmeURL){
     fetch(acmeURL)
@@ -23,6 +17,7 @@ function fetchNav(acmeURL){
             throw new ERROR('Network response was not OK.');
         })
         .then(function(data){
+             console.log(data);
             let nav = []
             for (let i=0; i<data.Navigation.nav.length; i++){
                 nav[i] = data.Navigation.nav[i];
@@ -33,7 +28,6 @@ function fetchNav(acmeURL){
 
 function buildNav(navItems){
     let ul = document.getElementById("navUl");
-
     for(let i=0; i<navItems.length; i++){
         let li = document.createElement('li');
         let text = document.createTextNode(navItems[i]);
