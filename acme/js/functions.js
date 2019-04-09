@@ -17,7 +17,6 @@ function fetchNav(acmeURL){
             throw new ERROR('Network response was not OK.');
         })
         .then(function(data){
-             console.log(data);
             let nav = []
             for (let i=0; i<data.Navigation.nav.length; i++){
                 nav[i] = data.Navigation.nav[i];
@@ -76,7 +75,7 @@ function clickNav(event){
         .then(function (data) {
             document.getElementById("home").setAttribute("class", "hide");
             document.getElementById("items").setAttribute("class", "");
-
+            console.log(data);
             let o = data[event.target.myParam];
             console.log("Ya done clicked " + event.target.myParam);
             document.getElementById("item_title").innerHTML = o.name;
