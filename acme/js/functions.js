@@ -5,6 +5,7 @@ let statusContainer = document.getElementById('statusMessage');
 let contentContainer = document.getElementById('mainContent');
 
 let acmeURL = "/acme/js/acme.json";
+console.log(data);
 
 fetchNav(acmeURL);
 function fetchNav(acmeURL){
@@ -16,7 +17,6 @@ function fetchNav(acmeURL){
             throw new ERROR('Network response was not OK.');
         })
         .then(function(data){
-            console.log(data);
             let nav = []
             for (let i=0; i<data.Navigation.nav.length; i++){
                 nav[i] = data.Navigation.nav[i];
