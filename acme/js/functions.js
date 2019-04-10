@@ -60,6 +60,7 @@ function clickListeners(){
 function clickHome(){
     document.getElementById("home").setAttribute("class", "");
     document.getElementById("items").setAttribute("class", "hide");
+    document.getElementById("pageTitle").innerHTML = "ACME | Home Page"
 }
 
 function clickNav(event){
@@ -84,6 +85,7 @@ function clickNav(event){
             document.getElementById("item_manufac").innerHTML = o.manufacturer;
             document.getElementById("item_reviews").innerHTML = o.reviews + "/5 stars";
             document.getElementById("item_price").innerHTML = "$" + o.price;
+            document.getElementById("pageTitle").innerHTML = "ACME | " + event.target.myParam;
         })
     }
 }
